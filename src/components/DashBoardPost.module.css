@@ -1,0 +1,127 @@
+.imageIcon {
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}
+.div,
+.h2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.div {
+  font-size: var(--body-text-size);
+  font-weight: 500;
+}
+.parent {
+  width: 406px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+}
+.div1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--color-gray);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  max-width: 100%;
+}
+.div2 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--color-gray);
+  white-space: pre-wrap;
+}
+.frameParent,
+.imageParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  max-width: 100%;
+}
+.frameParent {
+  width: 100%;
+  flex-direction: column;
+  gap: var(--gap-12xl);
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.imageParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-20xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--heading);
+}
+@media screen and (max-width: 1350px) {
+  .frameParent,
+  .imageIcon {
+    flex: 1;
+  }
+  .imageParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .frameParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .h2 {
+    font-size: var(--font-size-7xl);
+    line-height: 38px;
+  }
+  .frameParent {
+    gap: var(--gap-mini);
+  }
+  .imageParent {
+    gap: var(--gap-lgi);
+  }
+}
+@media screen and (max-width: 450px) {
+  .h2 {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .div,
+  .div1,
+  .div2 {
+    font-size: var(--small-text-size);
+    line-height: 24px;
+  }
+}

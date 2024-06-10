@@ -1,0 +1,148 @@
+.hopeIcon {
+  width: 91px;
+  height: 91px;
+  position: relative;
+  z-index: 1;
+}
+.hopeImage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+.donateAreaChild,
+.h1 {
+  position: relative;
+  max-width: 100%;
+}
+.h1 {
+  margin: 0;
+  width: 643px;
+  height: 36px;
+  font-size: inherit;
+  line-height: 150%;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.btn {
+  height: 60px;
+  width: 300px;
+  position: relative;
+  line-height: 150%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.donateArea {
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-smi) var(--padding-12xl) var(--padding-3xs);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.donateArea,
+.donateButton,
+.parent,
+.vectorParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.donateButton {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 40px;
+  text-align: center;
+  color: var(--color-black);
+}
+.parent,
+.vectorParent {
+  justify-content: flex-start;
+}
+.parent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-29xl);
+  min-width: 320px;
+}
+.vectorParent {
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-darkslategray);
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--padding-55xl) var(--padding-37xl) var(--padding-18xl)
+    var(--padding-42xl);
+  box-sizing: border-box;
+  gap: var(--gap-19xl);
+  z-index: 2;
+}
+.support {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--subheading-size);
+  color: var(--color-black);
+}
+.support {
+  flex-direction: column;
+  padding: 0 0 var(--padding-30xl-6);
+  gap: var(--gap-8xl);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--small-text);
+}
+@media screen and (max-width: 1050px) {
+  .b,
+  .h1 {
+    font-size: var(--font-size-7xl);
+    line-height: 38px;
+  }
+  .parent {
+    min-width: 100%;
+  }
+  .vectorParent {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-9xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .vectorParent {
+    gap: var(--gap-lgi);
+  }
+}
+@media screen and (max-width: 450px) {
+  .b,
+  .h1 {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .parent {
+    gap: var(--gap-5xl);
+  }
+  .support {
+    padding-bottom: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}

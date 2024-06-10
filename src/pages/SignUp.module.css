@@ -1,0 +1,149 @@
+.crafity {
+  position: relative;
+  line-height: 150%;
+  align-self: stretch;
+  font-size: inherit;
+  font-weight: 800;
+  font-family: inherit;
+}
+.labels {
+  text-align: left;
+  color : black;
+  font-size: larger;
+  font-weight: bold;
+}
+.field {
+  width: 100%;
+  align-self: stretch;
+  box-shadow: var(--button-shadow);
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl) var(--padding-base);
+}
+.signUp {
+  position: relative;
+  font-size: var(--body-text-size);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--small-text);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 67px;
+}
+.button,
+.fieldContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.button {
+  box-shadow: var(--button-shadow);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 33px var(--padding-xl);
+  white-space: nowrap;
+  font-size: large;
+}
+.fieldContainer {
+  width: 30%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 34px;
+}
+.fieldLabelWrapper {
+  padding: 0 var(--padding-21xl);
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-size: var(--body-text-size);
+  color: var(--color-gray);
+}
+.fieldLabelWrapper,
+.signUpform,
+.signUp {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.signUpform {
+  flex: 1;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 40px;
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  font-size: var(--title-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+}
+.signUp {
+  width: 100vw;
+  position: relative;
+  flex-direction: row;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.groupWrapper {
+  text-align: left;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .signUpform {
+    padding-top: 92px;
+    padding-bottom: 724px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .crafity {
+    font-size: var(--font-size-32xl);
+    line-height: 77px;
+  }
+  .signUpfrom {
+    padding-top: 60px;
+    padding-bottom: 471px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fieldContainer {
+    gap: var(--gap-12xl);
+  }
+  .signUpform {
+    gap: 102px;
+    padding-left: var(--padding-191xl);
+    padding-right: var(--padding-191xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .crafity {
+    font-size: var(--font-size-19xl);
+    line-height: 58px;
+  }
+  .div,
+  .label {
+    font-size: var(--small-text-size);
+    line-height: 24px;
+  }
+  .signUpform {
+    gap: var(--gap-32xl);
+    padding: var(--padding-20xl) var(--padding-xl) 306px;
+    box-sizing: border-box;
+  }
+}

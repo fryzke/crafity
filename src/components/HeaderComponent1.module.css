@@ -1,0 +1,87 @@
+.listWrapper {
+    width: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.nav {
+    display: inline-block;
+    list-style: none;
+}
+.crafity {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+    display: flex;
+    min-width: 86px;
+    top: 12px;
+    white-space: nowrap;
+    color: black;
+}
+.crafity:hover {
+    color: black;
+}
+.button {
+    box-shadow: var(--button-shadow);
+    height: 52px;
+    width: 100px;
+    color: white;
+    float:right;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    border-radius: 50px;
+    position: relative;
+    top: 20px;
+
+}
+.frameParent,
+.mainInner {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+.frameParent {
+    flex: 1;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--body-text-size);
+    color: var(--color-black);
+    font-family: var(--small-text);
+}
+.mainInner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-11xl) 114px;
+    box-sizing: border-box;
+}
+
+.div {
+    height: 52px;
+    width: 100px;
+    float:right;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    border-radius: 50px;
+    position: relative;
+    top: 12px;
+}
+
+.icon {
+    display: flex;
+    margin:auto;
+}

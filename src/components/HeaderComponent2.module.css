@@ -1,0 +1,57 @@
+.field {
+    border: 0;
+    background-color: white;
+    flex: 1;
+    font-family: var(--small-text);
+    font-weight: 500;
+    font-size: var(--body-text-size);
+    color: var(--color-gray);
+    min-width: 50px;
+    max-width: 100%;
+  }
+  .buttonNew1 {
+    box-shadow: var(--button-shadow);
+    font-size: medium;
+    color: white;
+    float:right;
+    display:flex;
+    text-align: center;
+    justify-content:center;
+    position: relative;
+    bottom: 12px;
+  
+  }
+  .buttonNew {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-2xs-5) 0 0;
+  }
+  .fieldParent,
+  .mainChild {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .fieldParent {
+    background-color: white;
+    width: 940px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--gap-lgi);
+  }
+  .mainChild {
+    position: fixed;
+    top : 166px;
+    left: 0;
+    right: 0;
+    z-index: 98;
+    align-self: center;
+    justify-content: center;
+    padding: 0 var(--padding-xl) 3.5px var(--padding-10xl);
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+  }

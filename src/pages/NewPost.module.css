@@ -1,0 +1,121 @@
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.HeaderComponents1,
+.BodyContents {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.BodyContents {
+    flex-direction: row;
+}
+
+.main,
+.editorArea {
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-48xl) 0 var(--padding-29xl);
+  gap: 112px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.editorArea {
+    justify-content: space-evenly;
+}
+.wrapper{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 20px auto;
+}
+.tagWrapper{
+  border-radius: 20px;
+  border: solid gray 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  padding: 10px;
+  margin-right: 5px;
+}
+.tag {
+  justify-content: center;
+  font-size: small;
+  font-weight: 600;
+}
+.tagBtn{
+  border-style: none;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1350px) {
+  .productDetailPage {
+    padding-bottom: 36px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .productDetailPage {
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+  .frameWrapper {
+    padding-left: var(--padding-135xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navigation1 {
+    padding-right: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+  .h1 {
+    font-size: var(--font-size-13xl);
+    line-height: 35px;
+  }
+  .frameContainer,
+  .frameGroup,
+  .parent {
+    gap: var(--gap-base);
+  }
+  .productDetailPage {
+    gap: 61px;
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .b1 {
+    font-size: var(--font-size-10xl);
+    line-height: 32px;
+  }
+  .frameWrapper {
+    padding-left: var(--padding-58xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--subheading-size);
+    line-height: 26px;
+  }
+  .div {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .productDetailPage {
+    gap: var(--gap-12xl);
+  }
+  .b1 {
+    font-size: var(--font-size-3xl);
+    line-height: 24px;
+  }
+}

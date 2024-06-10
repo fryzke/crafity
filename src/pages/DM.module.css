@@ -1,0 +1,88 @@
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+.HeaderComponents1,
+.BodyContents {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.BodyContents {
+    flex-direction: row;
+}
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    flex-direction: column;
+    padding: var(--padding-48xl) 0 var(--padding-29xl);
+    gap: 112px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.MainContainer {
+    width: 960px;
+    height: 600px;
+    border-style: none;
+    background-color: #fff;
+  }
+  
+  .Sidebar {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .ConversationList {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .Conversation {
+    background-color: #fff;
+    color: #444;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .Conversation:hover {
+    background-color: #ccc;
+  }
+  
+  .ConversationActive {
+    background-color: #ddd;
+  }
+  
+  .Avatar {
+    border: 1px solid #ccc;
+  }
+  
+  .ChatContainer {
+    background-color: #fff;
+  }
+  
+  .ConversationHeader {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .Message {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .Message--incoming {
+    background-color: #d0d0d0;
+  }
+  
+  .Message--outgoing {
+    background-color: #c0c0c0;
+    color: #000;
+  }
+  
+  .MessageInput {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }

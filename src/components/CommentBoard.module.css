@@ -1,0 +1,24 @@
+.commentWrapper{
+    width: 100%;
+    gap: var(--gap-sm);
+}
+.commentForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+}
+.comment {
+    width: 100%;
+}
+.button {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+.commentContent {
+    font-size: medium;
+    list-style-type: none;
+    list-style: none;
+    margin: 10px;
+}

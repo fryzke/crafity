@@ -1,0 +1,63 @@
+.div,
+.imageIcon,
+.title {
+  align-self: stretch;
+  position: relative;
+}
+.imageIcon {
+  height: 180px;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.div,
+.title {
+  line-height: 150%;
+  font-weight: 500;
+}
+.div {
+  color: var(--color-gray);
+}
+.card,
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.copy {
+  align-self: stretch;
+  justify-content: center;
+  gap: var(--gap-9xs);
+}
+.post {
+  width: 310px;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  min-width: 120px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--body-text-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 450px) {
+  .div,
+  .title {
+    font-size: var(--small-text-size);
+    line-height: 24px;
+  }
+  .post {
+    width: 120px;
+    height: 120px;
+  }
+  .imageIcon {
+    width: 120px;
+    height: 80px;
+  }
+}

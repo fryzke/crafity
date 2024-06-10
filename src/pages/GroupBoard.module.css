@@ -1,0 +1,229 @@
+.HeaderComponents1,
+.HeaderComponents2,
+.BodyContents {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.header {
+  padding-bottom: 140px;
+}
+.productDetailPageInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.productDetailPageInner {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.card {
+  width: 320px;
+  height: 180px;
+  position: relative;
+  display: none;
+}
+.h1,
+.wrapper {
+  max-width: 100%;
+}
+.h1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 110%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  text-align: left;
+  border-style: none;
+}
+.wrapper {
+  width: 775px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) var(--padding-12xl) 0;
+  box-sizing: border-box;
+}
+.div {
+  width: 120px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  max-width: 100%;
+  text-align: left;
+  border-style: none;
+}
+.frameContainer,
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.frameContainer,
+.frameGroup,
+.frameParent,
+.parent {
+  align-items: flex-start;
+  max-width: 100%;
+}
+.parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  font-size: var(--subheading-size);
+}
+.frameParent {
+  width: 780px;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-10xl);
+  text-align: center;
+  font-size: var(--heading-size);
+  color: var(--color-black);
+  font-family: var(--heading);
+}
+.frameParent,
+.postBoad,
+.productDetailPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.productDetailPage {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-end;
+  padding: 0 0 56px;
+  box-sizing: border-box;
+  gap: 122.5px;
+  max-width: 100%;
+}
+.postBoad {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.b1,
+.groupIcon {
+  margin: var(--padding-xl);
+}
+.b1 {
+  width: 100px;
+  line-height: 110%;
+}
+.frameDiv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+}
+.frameParent,
+.frameWrapper {
+  display: flex;
+  margin: auto;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--subheading-size);
+  color: var(--color-white);
+  font-family: var(--heading);
+}
+.btn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.groupPost{
+  background-color: #d9f1f1;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1350px) {
+  .productDetailPage {
+    padding-bottom: 36px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .productDetailPage {
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+  .frameWrapper {
+    padding-left: var(--padding-135xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navigation1 {
+    padding-right: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+  .h1 {
+    font-size: var(--font-size-13xl);
+    line-height: 35px;
+  }
+  .frameContainer,
+  .frameGroup,
+  .parent {
+    gap: var(--gap-base);
+  }
+  .productDetailPage {
+    gap: 61px;
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .b1 {
+    font-size: var(--font-size-10xl);
+    line-height: 32px;
+  }
+  .frameWrapper {
+    padding-left: var(--padding-58xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--subheading-size);
+    line-height: 26px;
+  }
+  .div {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .productDetailPage {
+    gap: var(--gap-12xl);
+  }
+  .b1 {
+    font-size: var(--font-size-3xl);
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  position: fixed;
+  z-index: 100;
+  background-color: #f9f9f9;
+}
+.sidebar {
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease;
+  color: #202020;
+  height: 100%;
+  z-index: 100;
+}
+.button {
+  position: relative;
+  left: 330px; 
+  top: 10px;
+  z-index: 101;
+  overflow: hidden;
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+}
+.content {
+  z-index: 100;
+  padding : 0px 40px 0px 0px;
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  font-weight: bold;
+  font-size: large;
+  font-weight: 800;
+  overflow: auto;
+}
+.menuLabel{
+  font-size: medium;
+  font-weight: 500;
+}
+.submenu {
+  font-size: medium;
+}

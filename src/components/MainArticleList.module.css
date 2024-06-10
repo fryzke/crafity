@@ -1,0 +1,72 @@
+.h1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 110%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.trendingPosts {
+  width: 757px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.cardGrid,
+.trendingPostsParent {
+  align-self: stretch;
+  display: flex;
+  max-width: 100vw;
+}
+.cardGrid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  font-size: var(--body-text-size);
+}
+.trendingPostsParent {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+  margin: auto;
+}
+@media screen and (max-width: 975px) {
+  .h1 {
+    font-size: var(--font-size-13xl);
+    line-height: 35px;
+  }
+  .cardGrid {
+    gap: var(--gap-5xs);
+  }
+}
+@media screen and (max-width: 725px) {
+  .trendingPostsParent {
+    gap: var(--gap-base);
+  }
+  .cardGrid {
+    gap: var(--gap-5xs);
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--subheading-size);
+    line-height: 26px;
+  }
+  .cardGrid {
+    gap: var(--gap-5xs);
+  }
+}
